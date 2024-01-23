@@ -1,0 +1,30 @@
+@import url(variables.css);
+
+
+
+.box{
+width: 150px;
+height: 150px;
+color: #fff;
+margin-bottom: 10px;
+background:var(--bg-primary)
+}
+
+.box:nth-child(3){
+background: red;
+display: flex;
+flex-direction: column;
+align-items: flex-end;
+justify-content: center;
+/* text-align: end; */
+
+/* position: absolute; */
+/* left: 50px; */
+/* top: 60px; */
+}
+
+.box:nth-child(3) span{
+  /* margin: auto; */
+  color: blue;
+  /* align-self: flex-end; */
+}

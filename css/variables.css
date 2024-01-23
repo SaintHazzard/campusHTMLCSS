@@ -1,0 +1,9 @@
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+:root{
+--colorPrimary: #f3f3f3;
+--bg-primary: #144781;
+}
