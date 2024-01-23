@@ -22,23 +22,40 @@ body{
 }
 
 .box{
-  width: 30rem;
+  display: flex;
+  width: 40%;
   height: 20rem;
   border-style: dashed;
 }
-
+.box:nth-child(1){
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: center;
+}
+.box:nth-child(2){
+  align-items: flex-end;
+}
 .box:nth-child(3){
   width: 90%;
+  align-items: flex-end;
 }
 
 .box:nth-child(4){
   width: 80%;
+  align-items: flex-end;
+  justify-content: space-between;
+  
 }
 
 .internas{
-  width: 10rem;
+  display: flex;
+  width: 25%;
+  height: max-content;
   border-style: solid;
+  justify-content: center;
 }
 
-
-
+.internas span{
+  display: flex;
+  width: fit-content;
+}
