@@ -1,0 +1,28 @@
+body {
+  height: max-content;
+}
+
+body {
+  width: 100vw;
+}
+.contenedor {
+  width: 95%;
+  height: 500px;
+  background: aquamarine;
+  margin: auto;
+}
+
+.caja {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  background-color: black;
+  transition-duration: 2s;
+  margin: 1rem 0 0 1rem;
+  position: relative;
+  transition: transform 2s ease-in-out;
+}
+
+.caja:hover {
+  transform: translateX(calc(1690px));
+}
