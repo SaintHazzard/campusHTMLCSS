@@ -1,0 +1,98 @@
+.animation {
+  width: 950px;
+  height: 500px;
+  position: absolute;
+  background-image: url(img/background.png);
+  background-size: 100%;
+}
+.messages {
+  margin: auto;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 300px;
+  height: 90px;
+  background-image: url(img/mensaje.png);
+  transition: background-position 4s ease, opacity 0 ease 4s;
+  transition-duration: 4s;
+  transition-timing-function: ease;
+}
+.messages:hover {
+  background-position: bottom;
+  opacity: 0;
+}
+.cloud {
+  background-image: url(img/cloud.png);
+  width: 200px;
+  height: 75px;
+  position: absolute;
+  right: 0;
+  z-index: 20;
+  margin-top: 20px;
+  right: -200px;
+  transition: transform 3s ease 4s, opacity 1ms ease 11s;
+}
+.cloud2 {
+  background-image: url(img/cloud.png);
+  width: 200px;
+  height: 75px;
+  position: absolute;
+  right: 575px;
+  margin-top: 20px;
+  transform: translateX(200px);
+  transition: transform 3s ease 12s, opacity 1ms ease 10s;
+  opacity: 0;
+}
+
+.messages:hover ~ .cloud {
+  transform: translateX(-575px);
+  opacity: 0;
+}
+
+.messages:hover ~ .cloud2 {
+  transform: translateX(-400px);
+  opacity: 1;
+}
+
+.rain {
+  width: 200px;
+  height: 410px;
+  background-image: url("img/rain-background.png");
+  background-repeat: no-repeat;
+  background-position: 0 320%;
+  margin-top: 75px;
+  transition: all 8s ease 7s;
+}
+
+.messages:hover ~ .cloud .rain {
+  background-position: 0 -250%;
+}
+.sun {
+  background-image: url(img/sun.png);
+  width: 70px;
+  height: 70px;
+  position: absolute;
+  right: 0;
+  transform: translateX(70px);
+  transition: all 3s ease 15s;
+}
+.messages:hover ~ .sun {
+  transform: translateX(-230px);
+}
+.flower {
+  background-image: url(img/flower.png);
+  width: 90px;
+  height: 130px;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  margin: auto;
+  transform: translateY(130px);
+  transition: all 4s ease 18s;
+}
+.messages:hover ~ .flower {
+  transform: translateY(0px);
+}

@@ -1,0 +1,219 @@
+.animation {
+    width: 950px;
+    height: 500px;
+    background: url("img/background.png") no-repeat left top;
+    position: absolute;
+}
+
+.cloud {
+    width: 0;
+    height: 75px;
+    position: absolute;
+    left: 950px;
+    top: 10px;
+    background-image: url("img/cloud.png");
+    background-repeat:  no-repeat;
+    background-position:  0 0;
+    z-index: 20;
+    animation-name: cloud-animation;
+    animation-duration: 20s;
+    animation-delay: 5s;
+    animation-iteration-count: 1;
+    animation-timing-function: linear;
+    animation-direction: normal;
+}
+
+.messages {
+    width: 300px;
+    height: 100px;
+    position: absolute;
+    background: url("img/mensaje.png");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    width: 300px;
+    left: 350px;
+    top: 180px;
+    animation-name: messages-animation;
+    animation-duration: 33s;
+    animation-delay: 0s;
+    animation-iteration-count: 1;
+    animation-timing-function: linear;
+    animation-direction: normal;
+    animation-fill-mode: forwards;
+}
+
+
+.rain {
+    width: 200px;
+    height: 400px;
+    background-image: url("img/rain-background.png");
+    background-repeat: no-repeat;
+    background-position: 0 320%;
+    margin:65px 0 0 0;
+    animation-name: rain-animation;
+    animation-duration: 8s; 
+    animation-delay: 10s;
+    animation-iteration-count: 1;
+    animation-timing-function: linear;
+    animation-direction: normal;
+
+}
+
+.sun {
+    background: url("img/sun.png") no-repeat top left;
+    width: 70px;
+    height: 70px;
+    opacity: 0.2;
+    position: absolute;
+    top:20px;
+    left: 700px;
+    animation-name: sun-animation;
+    animation-duration: 2s;
+    animation-delay: 23s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-out;
+    animation-direction: alternate;
+}
+
+.flower {
+    width: 90px;
+    height: 130px;
+    background-image: url("img/flower.png");
+    background-repeat:no-repeat;
+    background-position: 0 130px;
+    position: absolute;
+    bottom: 5px;
+    left: 425px;
+    animation-name: flower-animation;
+    animation-duration: 3s;
+    animation-delay: 27s;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-out;
+    animation-direction: normal;
+    animation-fill-mode: forwards;
+
+}
+
+@keyframes messages-animation {
+    0% {
+        background-position: 0 0;
+        opacity: 1;
+    }
+
+    2% {
+        background-position: 0 0;
+       opacity: 0;
+    }
+
+     3% {
+           background-position: 0 -80px;
+           opacity: 0;
+     }
+
+    5% {
+        opacity: 1;
+        background-position: 0 -80px;
+    }
+
+    7% {
+        background-position: 0 -80px;
+       opacity: 0;
+    }
+
+     8% {
+           background-position: 0 -155px;
+           opacity: 0;
+     }
+
+
+    10% {
+        background-position: 0 -155px;
+        opacity: 1;
+    }
+
+    12% {
+        background-position: 0 -155px;
+       opacity: 0;
+    }
+
+     13% {
+           background-position: 0 -250px;
+           opacity: 0;
+     }
+
+    15% {
+        opacity: 1;
+        background-position: 0 -250px;
+    }
+
+    17% {
+       background-position: 0 -250px;
+       opacity: 0;
+    }
+
+    95% {
+        opacity: 0;
+        background-position: 0 -350px;
+    }
+    100% {
+    background-position: 0 -350px;
+        opacity: 1;
+    }
+}
+
+
+
+@keyframes cloud-animation {
+
+    0% {
+        left: 960px;
+    }
+
+    10% {
+        left: 740px;
+        width: 200px;
+    }
+
+    30% {
+        left: 370px;
+    }
+
+    60% {
+        left: 380px;
+    }
+
+    85% {
+        left: 0;
+        width: 210px;
+        background-position: 0 5px;
+    }
+
+    100% {
+        left: 0;
+        width: 0;
+        background-position: -210px 0;
+    }
+  }
+
+
+@keyframes rain-animation {
+
+    100% {
+        background-position: 0 -220%;
+    }
+}
+
+@keyframes sun-animation {
+
+    100% {
+        opacity: 1;
+    }
+}
+
+
+@keyframes flower-animation {
+
+    100% {
+        background-position: 0 0;
+    }
+}

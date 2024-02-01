@@ -1,0 +1,18 @@
+.miCuadrado {
+  position: absolute;
+  width: 100px; /* o el ancho deseado */
+  height: 100px; /* o la altura deseada */
+  background-color: blue; /* o el color deseado */
+  left: 100%;
+  transition: left 2s ease-in-out; /* transición de 2 segundos con efecto ease-in-out */
+}
+
+.miCuadrado.animado {
+  left: 50%; /* posición en la mitad del elemento padre */
+  transition: left 2s ease-in-out; /* transición de 2 segundos con efecto ease-in-out */
+}
+
+.miCuadrado.final {
+  left: 0%; /* posición en left 0% */
+  transition: left 2s ease-in-out; /* transición de 2 segundos con efecto ease-in-out */
+}
